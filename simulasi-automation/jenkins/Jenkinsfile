@@ -24,14 +24,14 @@ pipeline {
       steps {
         echo '🔍 Menampilkan struktur folder:'
         sh 'ls -al'
-        echo '🔍 Menampilkan isi folder fp-frontend-fix:'
-        sh 'ls -al fp-frontend-fix || echo "❌ Folder fp-frontend-fix tidak ditemukan!"'
+        echo '🔍 Menampilkan isi folder fp-frondend-fix:'
+        sh 'ls -al fp-frondend-fix || echo "❌ Folder fp-frondend-fix tidak ditemukan!"'
       }
     }
 
     stage('Build & Push Frontend') {
       steps {
-        dir('fp-frontend-fix') {
+        dir('fp-frondend-fix') {
           sh 'docker build -t kautsarakasyah/fp-frontend:latest .'
           withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
             sh 'echo $PASS | docker login -u $USER --password-stdin'

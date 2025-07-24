@@ -19,7 +19,7 @@ pipeline {
 
     stage('Build Docker Image') {
       steps {
-        dir('fp-frontend-fix') {
+        dir('fp-frondend-fix') {
           echo "📦 Building Docker image: ${env.IMAGE_NAME}"
           sh "docker build -t ${env.IMAGE_NAME} ."
         }
