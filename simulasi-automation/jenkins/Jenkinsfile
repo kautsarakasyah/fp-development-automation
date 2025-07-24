@@ -9,6 +9,7 @@ pipeline {
     DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds')
     TELEGRAM_BOT_TOKEN = '7964045222:AAElE5m35X1rUfU-2lO0ZpLzwuy_esmMsvY'
     TELEGRAM_CHAT_ID = '1868802578'
+    JENKINS_URL = 'https://ed77d6e42026.ngrok-free.app'
   }
 
   stages {
