@@ -13,6 +13,22 @@ pipeline {
   }
 
   stages {
+
+    stage('Checkout') {
+      steps {
+        git branch: 'main', url: 'https://github.com/kautsarakasyah/fp-development-automation.git'
+      }
+    }
+
+    stage('Debug Workspace') {
+      steps {
+        echo '🔍 Menampilkan struktur folder:'
+        sh 'ls -al'
+        echo '🔍 Menampilkan isi folder fp-frontend-fix:'
+        sh 'ls -al fp-frontend-fix || echo "❌ Folder fp-frontend-fix tidak ditemukan!"'
+      }
+    }
+
     stage('Build & Push Frontend') {
       steps {
         dir('fp-frontend-fix') {
@@ -34,10 +50,18 @@ pipeline {
 
   post {
     success {
-      sh "curl -s -X POST https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage -d chat_id=$TELEGRAM_CHAT_ID -d text='✅ Deploy frontend sukses'"
+      sh """
+        curl -s -X POST https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage \
+        -d chat_id=$TELEGRAM_CHAT_ID \
+        -d text='✅ Deploy frontend sukses'
+      """
     }
     failure {
-      sh "curl -s -X POST https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage -d chat_id=$TELEGRAM_CHAT_ID -d text='❌ Deploy frontend gagal'"
+      sh """
+        curl -s -X POST https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage \
+        -d chat_id=$TELEGRAM_CHAT_ID \
+        -d text='❌ Deploy frontend gagal'
+      """
     }
   }
 }
