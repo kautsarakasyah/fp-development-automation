@@ -1,0 +1,6 @@
+FROM jenkins/jenkins:lts
+USER root
+RUN curl -LO https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/openshift-client-linux.tar.gz \
+ && tar -xzvf openshift-client-linux.tar.gz -C /usr/local/bin oc \
+ && rm openshift-client-linux.tar.gz
+USER jenkins

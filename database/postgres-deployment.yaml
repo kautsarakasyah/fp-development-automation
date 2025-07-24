@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bni-postgres
+  namespace: final-app-deployment
+  labels:
+    app: bni-postgres
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bni-postgres
+  template:
+    metadata:
+      labels:
+        app: bni-postgres
+    spec:
+      containers:
+        - name: postgres
+          image: docker.io/kautsarakasyah/database-postgres:14
+          ports:
+            - containerPort: 5432
+          env:
+            - name: POSTGRES_DB
+              value: final_project_bni
+            - name: POSTGRES_USER
+              value: final_project_bni_user
+            - name: POSTGRES_PASSWORD
+              value: mysecretpassword
+            - name: PGDATA
+              value: /var/lib/postgresql/data/pgdata
+          volumeMounts:
+            - name: pgdata
+              mountPath: /var/lib/postgresql/data
+          securityContext:
+            runAsNonRoot: true
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+                - ALL
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+      volumes:
+        - name: pgdata
+          emptyDir: {}
+      securityContext:
+        seccompProfile:
+          type: RuntimeDefault

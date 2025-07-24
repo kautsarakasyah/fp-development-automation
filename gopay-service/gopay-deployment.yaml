@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gopay
+  namespace: final-app-deployment
+  labels:
+    app: gopay
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gopay
+  template:
+    metadata:
+      labels:
+        app: gopay
+    spec:
+      containers:
+        - name: gopay
+          image: kautsarakasyah/gopay-service:latest
+          ports:
+            - containerPort: 8081
+          envFrom:
+            - secretRef:
+                name: fp-frontend-secret

@@ -1,0 +1,20 @@
+groups:
+  - name: service-alerts
+    rules:
+      - alert: GopayDown
+        expr: up{job="gopay"} == 0
+        for: 30s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Gopay service is down"
+          description: "Gopay tidak merespons di port 8081"
+
+      - alert: FrontendDown
+        expr: up{job="frontend"} == 0
+        for: 30s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Frontend service is down"
+          description: "Frontend tidak merespons di port 3000"

@@ -1,0 +1,17 @@
+global:
+  resolve_timeout: 5m
+
+receivers:
+  - name: 'telegram'
+    telegram_configs:
+      - bot_token: 'YOUR_TELEGRAM_BOT_TOKEN'
+        chat_id: 'YOUR_CHAT_ID'
+        message: "🔥 *{{ .CommonLabels.alertname }}*\n{{ .CommonAnnotations.description }}"
+        parse_mode: "Markdown"
+
+route:
+  group_by: ['alertname']
+  group_wait: 10s
+  group_interval: 30s
+  repeat_interval: 1h
+  receiver: 'telegram'

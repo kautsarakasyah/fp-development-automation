@@ -1,0 +1,16 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'frontend'
+    static_configs:
+      - targets: ['fp-frontend:3000']
+  - job_name: 'gopay'
+    static_configs:
+      - targets: ['gopay:8081']
+  - job_name: 'shopeepay'
+    static_configs:
+      - targets: ['shopeepay:8080']
+
+rule_files:
+  - "alert-rules.yaml"

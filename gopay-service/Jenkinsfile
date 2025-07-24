@@ -1,0 +1,62 @@
+pipeline {
+    agent any
+
+    environment {
+        DEPLOYMENT_NAME = "gopay-service"
+        OPENSHIFT_SERVER = "https://api.ocp-one-gate-payment.skynux.fun:6443"
+        OPENSHIFT_PROJECT = "external-services"
+        OPENSHIFT_REGISTRY = "default-route-openshift-image-registry.apps.ocp-one-gate-payment.skynux.fun"
+        OPENSHIFT_IMAGE_TAG = "latest"
+        OPENSHIFT_TOKEN = credentials('openshift-token')
+    }
+
+    stages {
+        stage('Login to OpenShift') {
+            steps {
+                sh """
+                    oc login --token=${OPENSHIFT_TOKEN} --server=${OPENSHIFT_SERVER} --insecure-skip-tls-verify=true
+                    oc project ${OPENSHIFT_PROJECT}
+                """
+            }
+        }
+
+        stage('Build & Push Docker Image to openshift Registry') {
+            steps {
+                sh """
+                    docker build -t ${DEPLOYMENT_NAME}:${OPENSHIFT_IMAGE_TAG} .
+
+                    docker tag ${DEPLOYMENT_NAME}:${OPENSHIFT_IMAGE_TAG} \\
+                        ${OPENSHIFT_REGISTRY}/${OPENSHIFT_PROJECT}/${DEPLOYMENT_NAME}:${OPENSHIFT_IMAGE_TAG}
+
+                    docker login -u openshift -p ${OPENSHIFT_TOKEN} ${OPENSHIFT_REGISTRY}
+
+                    docker push ${OPENSHIFT_REGISTRY}/${OPENSHIFT_PROJECT}/${DEPLOYMENT_NAME}:${OPENSHIFT_IMAGE_TAG}
+                """
+            }
+        }
+
+        stage('Deploy to OpenShift') {
+            steps {
+                sh """
+                    oc apply -f openshift/deployment.yaml
+                    oc apply -f openshift/service.yaml
+
+                    if ! oc get route ${DEPLOYMENT_NAME}; then
+                      oc expose svc/${DEPLOYMENT_NAME}
+                    fi
+
+                    oc rollout restart deployment/${DEPLOYMENT_NAME}
+                """
+            }
+        }
+    }
+
+    post {
+        success {
+            echo '🎉 Deploy Success!'
+        }
+        failure {
+            echo '❌ Deploy Failed!'
+        }
+    }
+}
