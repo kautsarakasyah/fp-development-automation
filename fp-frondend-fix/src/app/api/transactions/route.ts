@@ -1,6 +1,6 @@
 
 import { NextResponse, type NextRequest } from 'next/server';
-import { pool } from '@/lib/db';
+import { getPool } from '@/lib/db';
 import type { TransactionInput } from '@/lib/types';
 import jwt, { type JwtPayload } from 'jsonwebtoken';
 
@@ -43,11 +43,13 @@ async function callPartnerApi(transactionDetails: Omit<TransactionInput, 'status
     const { payment_method, phone_number, nominal, user } = transactionDetails;
     let response;
 
-    const GOPAY_SERVICE_URL = 'http://localhost:8081/gopay/pay'; // Alamat service Spring Boot
-    const SHOPEEPAY_SERVICE_URL = 'http://localhost:8080/shopeepay/pay'; // Alamat service GoLang
+    const GOPAY_SERVICE_URL = 'http://gopay-service:8081/gopay/pay'; // Alamat service Spring Boot
+    const SHOPEEPAY_SERVICE_URL = 'http://shopeepay-service:8080/shopeepay/pay'; // Alamat service GoLang
 
     // Kunci rahasia yang lebih aman dan panjang, khusus untuk GoPay
     const GOPAY_SECRET_KEY = "ini-adalah-kunci-rahasia-gopay-yang-sangat-aman-dan-panjang";
+    const SHOPEEPAY_SECRET_KEY = "shopeepay-secret-key";
+
 
     try {
         if (payment_method === 'Gojek') {
@@ -81,7 +83,7 @@ async function callPartnerApi(transactionDetails: Omit<TransactionInput, 'status
         } else if (payment_method === 'ShopeePay') {
             console.log(`[BNI-BFF] Forwarding to ShopeePay Service: ${SHOPEEPAY_SERVICE_URL}`);
             // Membuat JWT khusus untuk otentikasi BNI ke ShopeePay
-            const shopeeToken = jwt.sign({ partner: "BNI_MOBILE" }, "shopeepay-secret-key", { expiresIn: '5m' });
+            const shopeeToken = jwt.sign({ partner: "BNI_MOBILE" }, SHOPEEPAY_SECRET_KEY, { expiresIn: '5m' });
             
             response = await fetch(SHOPEEPAY_SERVICE_URL, {
                 method: 'POST',
@@ -140,13 +142,14 @@ export async function POST(req: AuthenticatedRequest) {
         user: user,
     };
     
+    const pool = getPool();
     const client = await pool.connect();
     try {
       // Panggil API mitra untuk validasi terlebih dahulu
       const partnerResponse = await callPartnerApi(transactionDetails);
       
       // Apapun hasilnya (Sukses/Gagal), kita catat di DB BNI
-      const status = partnerResponse.status;
+      const status = partnerResponse.status === 'Success' ? 'Success' : 'Failed';
 
       await client.query('BEGIN');
 
@@ -164,9 +167,9 @@ export async function POST(req: AuthenticatedRequest) {
           // Buat transaksi gagal karena saldo tidak cukup, tapi catat di DB
           const failedTxQuery = `
             INSERT INTO transactions (user_id, payment_method, phone_number, transaction_type, nominal, status, message)
-            VALUES ($1, $2, $3, $4, $5, 'Failed', 'Saldo tidak mencukupi') RETURNING *;
+            VALUES ($1, $2, $3, $4, $5, 'Failed', 'Saldo tidak mencukupi') RETURNING id;
           `;
-          const failedTxResult = await client.query(failedTxQuery, [user.id, transactionInput.payment_method, transactionInput.phone_number, transactionInput.transaction_type, transactionInput.nominal]);
+          await client.query(failedTxQuery, [user.id, transactionInput.payment_method, transactionInput.phone_number, transactionInput.transaction_type, transactionInput.nominal]);
           await client.query('COMMIT');
           // Kembalikan error yang jelas ke frontend
           return NextResponse.json({ message: 'Saldo BNI tidak mencukupi untuk melakukan transaksi ini.' }, { status: 400 });
@@ -199,7 +202,8 @@ export async function POST(req: AuthenticatedRequest) {
 
       // Jika transaksi GAGAL, kembalikan respons error yang sesuai ke frontend
       if (status === 'Failed') {
-        return NextResponse.json({ message: partnerResponse.message || 'Transaksi ditolak oleh mitra.' }, { status: 400 });
+        // Meskipun gagal, kita kirim data transaksi yang tercatat ke frontend agar bisa ditampilkan di halaman hasil
+        return NextResponse.json(newTransaction, { status: 400 });
       }
       
       // Tambahkan token partner ke respons jika transaksi berhasil
@@ -234,6 +238,7 @@ export async function GET(req: AuthenticatedRequest) {
     }
     const userId = authResult.user.id;
 
+    const pool = getPool();
     const client = await pool.connect();
     try {
         const balanceQuery = 'SELECT balance FROM accounts WHERE user_id = $1';
@@ -244,7 +249,7 @@ export async function GET(req: AuthenticatedRequest) {
         }
         const balance = parseFloat(balanceResult.rows[0].balance);
 
-        const historyQuery = 'SELECT id, user_id, date, payment_method, phone_number, transaction_type, nominal, status FROM transactions WHERE user_id = $1 ORDER BY date DESC';
+        const historyQuery = 'SELECT id, user_id, date, payment_method, phone_number, transaction_type, nominal, status, message FROM transactions WHERE user_id = $1 ORDER BY date DESC';
         const historyResult = await client.query(historyQuery, [userId]);
         const history = historyResult.rows;
 
@@ -256,5 +261,3 @@ export async function GET(req: AuthenticatedRequest) {
         client.release();
     }
 }
-
-    

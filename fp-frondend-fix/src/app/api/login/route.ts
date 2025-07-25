@@ -1,6 +1,6 @@
 
 import { NextResponse, type NextRequest } from 'next/server';
-import { pool } from '@/lib/db';
+import { getPool } from '@/lib/db';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 
@@ -17,6 +17,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ message: 'User ID dan password harus diisi.' }, { status: 400 });
     }
 
+    const pool = getPool();
     const client = await pool.connect();
     try {
       const isEmail = identifier.includes('@');
@@ -43,7 +44,7 @@ export async function POST(req: NextRequest) {
         { 
             id: user.id, 
             username: user.username,
-            phone_number: user.phone_number,
+            email: user.email, // Tambahkan email ke token
         },
         JWT_SECRET,
         { expiresIn: '1h' } // Token berlaku selama 1 jam

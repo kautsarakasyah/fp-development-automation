@@ -1,6 +1,6 @@
 
 import { NextResponse, type NextRequest } from 'next/server';
-import { pool } from '@/lib/db';
+import { getPool } from '@/lib/db';
 import bcrypt from 'bcryptjs';
 
 const DEFAULT_BALANCE = 5000000;
@@ -13,6 +13,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ message: 'Semua kolom harus diisi.' }, { status: 400 });
     }
 
+    const pool = getPool();
     const client = await pool.connect();
     try {
       // Cek apakah email atau username sudah ada
