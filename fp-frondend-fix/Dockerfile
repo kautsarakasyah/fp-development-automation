@@ -5,7 +5,7 @@ WORKDIR /app
 
 COPY package*.json ./
 COPY tsconfig.json ./
-COPY next.config.js ./
+COPY next.config.ts ./
 COPY . .
 
 RUN npm install
