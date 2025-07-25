@@ -4,7 +4,7 @@ Ini adalah starter NextJS di Firebase Studio.
 
 Untuk memulai, lihat file `src/app/page.tsx`.
 
-## Memulai asdasdasdasdasdasdasdasdasdas
+## Memulai asdasdasdasdasdasdasdasdasdasasdadsasdas
 
 Ikuti petunjuk ini untuk menyiapkan dan menjalankan proyek di komputer lokal Anda untuk tujuan pengembangan dan pengujian.
 

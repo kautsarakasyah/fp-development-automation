@@ -29,7 +29,7 @@
     NEXT_PUBLIC_APP_URL = credentials(&apos;frontend-url&apos;)
     OPENSHIFT_TOKEN = credentials(&apos;openshift-token&apos;)
     OPENSHIFT_SERVER = credentials(&apos;openshift-server&apos;)
-    JENKINS_URL = &apos;https://c8f3fe8b4c2d.ngrok-free.app&apos;
+    JENKINS_URL = &apos;https://e81af7b0f139.ngrok-free.app&apos;
   }
 
   stages {
