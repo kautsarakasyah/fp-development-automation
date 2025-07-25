@@ -1,0 +1,388 @@
+Started by GitHub push by kautsarakasyah
+Started by user [8mha:////4GTDTre5la6WXyBgSsJkud9K8sg7O/u99VnEOUUmAXP4AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[8mha:////4GBwVx9rc8PxRYgZUy5ZU3X/kqn5F6QLiCe3fN7fmDc/AAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4F8MgJ5kVhnTIZqdfGC62BnqQccdWjKtr/watCmfVeyfAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4KLPV+KCCXH4LyT8yYSpI/z1CFbCdWgntCeoNg+4DLO4AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZR/eT83ILSktQifY2k0sycEt3MPE19AHHxbH3KAAAA[0mJenkins in /var/jenkins_home/workspace/fp-frontend-deploy
+[8mha:////4K96hq20rhQAPPaJBSVu+rK8JSeZf7H3lhJkKhB1KlxSAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4IA5wwC7G5+Zlqkl1XQf1Dz3enZyYKWl7SwNiObCBLWAAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] withCredentials
+Masking supported pattern matches of $DOCKERHUB_CREDENTIALS or $DOCKERHUB_CREDENTIALS_PSW
+[8mha:////4OQyK/1Ldp8wGtleIboi6l4fj+QdWPdDm/uL0Cky3R+ZAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] {
+[8mha:////4EtWY1pmR77U2NiHhg+5ywKh6M2wZyKbPuUR0eACQrL5AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] withEnv
+[8mha:////4O4U8PhuDxs/jT2xBn1N4fqtYVAwfkppd1CuRZNFcuBFAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] {
+[8mha:////4OAju4fiVDJ7uwH2TIKLmtXPvy0AmUXiuXFa7VZMsK8TAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] stage
+[8mha:////4PT1zt/7C7vZWRxrba2F6UmiL/Q+8RqxphfF6inhZsu+AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDJUJUtJYbXmBiY5xYd8G+kFS8iK/xBwKRqNhqZ6XVPF9Q5gQHSl42DtuAuQ6yi72fmhwotZdIg2zoLGvCTNFJ7QZN1h1n1MQO5ogCFgqWDutIOaBnWKnG3E0VDfrqxGna9gqKYG/wAKEmM5vEXxgTrK+9zYQ/z18BjB2D2DEU283nWL4Bsam+msEAAAA=[0m[Pipeline] { (Checkout)
+[8mha:////4O5iwIaq+l0rGmGN71ZzFIqfRudGKlH/6DIjqikho/zwAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCakRFa6XhBSYxxo5159gOTsWL+Bp/IBCJii1WO9vM8wXrGODIQaNV1BuKrUHvRj0vzBz6q+OMli/YMkV2ChuVG+7UacGGk4IlRQkrARtFreNoSCfYCivvsnKSdHVOYf4OAkrTDfCAQszmJEP6whRgdxu7yPTz/BXA5BOU9f5TtX8D0loxuL4AAAA=[0m[Pipeline] deleteDir
+[8mha:////4Ap+503WFkVqu4WqGhVRPBiXiFm4unFLWv1IXdgpONl3AAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICtIgqreWGF5jYGCfWnbEdkooX8TX+QCASFVusdraZ5wuWKcKRo8XWUOcoNQ6D7+20cODYXTwP2PIZG6bE3qA0g2Rt6hklZwNzihIWAlaGGs/Jkc2wFq26q8orstUpx+k7CCidvsEDCjGZs4r5C2OEzbXXienn+SuAMWQod9tP7cMbEQkck74AAAA=[0m[Pipeline] git
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/kautsarakasyah/fp-development-automation.git
+ > git init /var/jenkins_home/workspace/fp-frontend-deploy # timeout=10
+Fetching upstream changes from https://github.com/kautsarakasyah/fp-development-automation.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5'
+ > git fetch --tags --force --progress -- https://github.com/kautsarakasyah/fp-development-automation.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/kautsarakasyah/fp-development-automation.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 1c7173f32f3f7aaf4a45e983dcb55d4b314c8284 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 1c7173f32f3f7aaf4a45e983dcb55d4b314c8284 # timeout=10
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b main 1c7173f32f3f7aaf4a45e983dcb55d4b314c8284 # timeout=10
+Commit message: "Rename COPY from COPY next.config.js ./ to COPY next.config.ts ./"
+ > git rev-list --no-walk 8aab8307ba2ff2bc1cac908519e2da5f67874bf7 # timeout=10
+[8mha:////4EL8vhuA++WudRgUPJJI8PojbIsPVuYqnVhNqTJqRYr2AAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICokRUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFkKHf7T23fF9V+kL4AAAA=[0m[Pipeline] }
+[8mha:////4Cp7QH7iFUFMzUnFgjept+UKkazIQmMHfRmswlUI6xnnAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIREg1CVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5NudINt/APjxdFm9AAAA[0m[Pipeline] // stage
+[8mha:////4HJkTO97jPLG713w2m4DjBcwDLmj/Ji0tAQ2VRVHMXa0AAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjCiQkREVrueEFJjbGiXUX7AtJxYv4Gn8gEImKrXZWWs3zBWVOcKDkZeOwDZjrILvY+6nJgVJ7iTTIhs6yJswUndRu0GTdcUZN7GCOKGChYOmwjpQDeoaVaszdVNGgr06cpm2voAj2Bg8QajKzSfyFMcH62ttM+PP8FcDYMYgdQ7HZfo7lG8Ln/QvBAAAA[0m[Pipeline] stage
+[8mha:////4CdE0V8WEroRUj4w0kQ2/HWsPa49AvjNcKzZO+FXiH9YAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] { (Build Docker Image)
+[8mha:////4C4j3qRgIdqnuPoEb4CCcdqx19S/iDS3wto/4tOonhPRAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] dir
+Running in /var/jenkins_home/workspace/fp-frontend-deploy/fp-frondend-fix
+[8mha:////4AMCOQK6W03jL9wJ2KQoPeC+RzudDZ+szA1LHiuJGfEWAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] {
+[8mha:////4GgieZAgFWHoElI1+bPb/+bblu7D7IawkczSGiPjJdsDAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiOhCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBr2eB0O+AAAA[0m[Pipeline] echo
+📦 Building Docker image: kautsarakasyah/fp-frontend:latest
+[8mha:////4EkQvKQ+GqpljzsWpyx/KpWUJ+2xFOR3Wc+kvfeqJv0wAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICVEgoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AGtm4OQvgAAAA==[0m[Pipeline] sh
++ docker build -t kautsarakasyah/fp-frontend:latest .
+#1 [internal] load build definition from Dockerfile
+#1 sha256:5bc1f15a83d19a50f4f3514ad8d50d793df6aafe1e6c4f1e9e4ddeefd43a52ec
+#1 transferring dockerfile: 688B 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:20-alpine
+#2 sha256:ccecbba0a2e5c072602481fed7ccd4ede19058d4d7721294b010c0440ce9c682
+#2 DONE 1.6s
+
+#3 [internal] load .dockerignore
+#3 sha256:4d160e85a80de1c9cf40bc9cdcf525ab382aa85e3cacdc5ee28360f54d0d7b49
+#3 transferring context: 2B 0.0s done
+#3 DONE 0.0s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 resolve docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799 0.0s done
+#17 sha256:54225bd601967a0aa669ec9be621c24d8eeac874b698d55874018070898685c2 0B / 1.26MB 0.2s
+#17 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 0B / 42.99MB 0.2s
+#17 sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8 0B / 3.80MB 0.2s
+#17 ...
+
+#13 [internal] load build context
+#13 sha256:a979fac5cc4637d4393c259702f906cf573c5581c02ab9f484958ffaa196e08f
+#13 transferring context: 724.17kB 0.6s done
+#13 DONE 0.6s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 sha256:54225bd601967a0aa669ec9be621c24d8eeac874b698d55874018070898685c2 1.26MB / 1.26MB 1.0s done
+#17 sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8 1.05MB / 3.80MB 1.8s
+#17 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 3.15MB / 42.99MB 2.1s
+#17 sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8 2.10MB / 3.80MB 2.3s
+#17 sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8 3.80MB / 3.80MB 2.6s done
+#17 extracting sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8
+#17 extracting sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8 0.2s done
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 6.29MB / 42.99MB 3.0s
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 9.44MB / 42.99MB 3.5s
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 12.58MB / 42.99MB 4.1s
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 15.73MB / 42.99MB 4.8s
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 18.87MB / 42.99MB 5.4s
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 22.02MB / 42.99MB 6.0s
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 25.17MB / 42.99MB 6.6s
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 28.31MB / 42.99MB 7.2s
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 31.46MB / 42.99MB 7.7s
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 35.65MB / 42.99MB 8.1s
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 38.80MB / 42.99MB 8.6s
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 42.99MB / 42.99MB 9.1s done
+#17 DONE 0.2s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 extracting sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e
+#17 extracting sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 0.8s done
+#17 extracting sha256:54225bd601967a0aa669ec9be621c24d8eeac874b698d55874018070898685c2 0.0s done
+#17 DONE 0.0s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 extracting sha256:a9e48ad1219d4d11c6456a8db0fd5c11af46242d52edf84e17ab84a7bfd93809 0.0s done
+#17 DONE 0.0s
+
+#14 [builder 2/8] WORKDIR /app
+#14 sha256:70ca4e5e75876fa53af5a61d6d42c24e0323ebfd5967bca3c8eddee141f505d2
+#14 DONE 0.1s
+
+#12 [builder 3/8] COPY package*.json ./
+#12 sha256:fc37d82b7fc8a38ee378c69cb6f6f3674a8fbb6413c01708fbe79bc2ec5d1783
+#12 DONE 0.0s
+
+#11 [builder 4/8] COPY tsconfig.json ./
+#11 sha256:09f2d7a427190a56a0cf822735b2e593338a9667658d35f25434ef7fc0cd3f07
+#11 DONE 0.0s
+
+#10 [builder 5/8] COPY next.config.ts ./
+#10 sha256:27e94410a1719d98db99f56b8f0476cc51ae0177bb06cf3e63b537413c89f6a2
+#10 DONE 0.0s
+
+#18 [builder 6/8] COPY . .
+#18 sha256:832ebd3844eee4d7c454f92bac1372b34ce2b7f9f48ff6a45787e608559a82d4
+#18 DONE 0.0s
+
+#8 [builder 7/8] RUN npm install
+#8 sha256:6f6fb7bd07ef8abddcba19c6916ef5d6b43df1f14a43606d3a32f0f0151980d6
+#8 5.500 npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+#8 8.014 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+#8 12.53 npm warn deprecated @types/handlebars@4.1.0: This is a stub types definition. handlebars provides its own type definitions, so you do not need this installed.
+#8 20.24 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+#8 52.92 
+#8 52.92 > nextn@0.1.0 postinstall
+#8 52.92 > patch-package
+#8 52.92 
+#8 53.05 patch-package 8.0.0
+#8 53.05 Applying patches...
+#8 53.05 No patch files found
+#8 53.07 
+#8 53.07 added 773 packages, and audited 774 packages in 52s
+#8 53.07 
+#8 53.07 103 packages are looking for funding
+#8 53.07   run `npm fund` for details
+#8 53.07 
+#8 53.07 2 vulnerabilities (1 low, 1 critical)
+#8 53.07 
+#8 53.07 To address all issues, run:
+#8 53.07   npm audit fix
+#8 53.07 
+#8 53.07 Run `npm audit` for details.
+#8 53.07 npm notice
+#8 53.07 npm notice New major version of npm available! 10.8.2 -> 11.5.1
+#8 53.07 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.5.1
+#8 53.07 npm notice To update run: npm install -g npm@11.5.1
+#8 53.07 npm notice
+#8 DONE 53.4s
+
+#7 [builder 8/8] RUN npm run build
+#7 sha256:b6168dc55a140eb1dbbfb37f0574a0ddf5cac67e9ae249ef66d359c260d62a6d
+#7 0.543 
+#7 0.543 > nextn@0.1.0 build
+#7 0.543 > next build
+#7 0.543 
+#7 1.090 Attention: Next.js now collects completely anonymous telemetry regarding usage.
+#7 1.090 This information is used to shape Next.js' roadmap and prioritize features.
+#7 1.090 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+#7 1.090 https://nextjs.org/telemetry
+#7 1.090 
+#7 1.201    ▲ Next.js 15.3.3
+#7 1.201 
+#7 1.226    Creating an optimized production build ...
+#7 15.26  ✓ Compiled successfully in 9.0s
+#7 15.26    Skipping validation of types
+#7 15.26    Skipping linting
+#7 15.49    Collecting page data ...
+#7 16.15 Error: Variabel lingkungan POSTGRES_URL tidak ditemukan.
+#7 16.15     at <unknown> (.next/server/app/api/user/[id]/route.js:1:999)
+#7 16.15 
+#7 16.15 > Build error occurred
+#7 16.17 [Error: Failed to collect page data for /api/user/[id]] {
+#7 16.17   type: 'Error'
+#7 16.17 }
+#7 ERROR: process "/bin/sh -c npm run build" did not complete successfully: exit code: 1
+------
+ > [builder 8/8] RUN npm run build:
+------
+process "/bin/sh -c npm run build" did not complete successfully: exit code: 1
+[8mha:////4Cfrg8RUGsCaGihQmF6LwzeMKNwQJNhLcBks80ygx3zCAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiUCEhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AGz5oXivgAAAA==[0m[Pipeline] }
+[8mha:////4NdUa1MDjLHKHSdwwD7IkIGKXb7BsS/n52QmA8zCiHVoAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRaSgQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AGMia70vgAAAA==[0m[Pipeline] // dir
+[8mha:////4Gm8LjNRMdoW2P6Q7sBgOlIqLFdJKXSwhsaMLHiEJZnmAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw+/avVIvgAAAA==[0m[Pipeline] }
+[8mha:////4Lcnh9+YdJ2GgTrNybtmOZASljZCKO69XjBTjK6rh9bRAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrdPtf28AG9C/nMvgAAAA==[0m[Pipeline] // stage
+[8mha:////4Fi864fYC0WjuD4JGcdD6TKrBvbVxJgyUyQqQjfCnDiMAAAApx+LCAAAAAAAAP9tjUEKwjAQRSeVLty69BApCIIgrtyGbDxBbGJMG2ZqMrVdeSKv5h2sFlz5V/99+LznC8qc4EDJy8ZhGzDXQXax91OTA6X2EmmQDZ1lTZgpOqndoMm644ya2MEcUcBCwdJhHSkH9Awr1Zi7qaJBX504TdteQRHsDR4g1GRmk/gLY4L1tbeZ8Of5K4CxYxA7hmKz/RzLN1/9FTrBAAAA[0m[Pipeline] stage
+[8mha:////4EVHfN74g64hR4kpJcrNIhsjdTsXNUF8M+VSm+z7J+8PAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQoIFMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfACW9ZT2wgAAAA==[0m[Pipeline] { (Push to DockerHub)
+Stage "Push to DockerHub" skipped due to earlier failure(s)
+[8mha:////4MNTIwHMdLKkGT7TtP76y9k92LuEvJSnqia+D8pI3bgQAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUUCBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHUcXIBvgAAAA==[0m[Pipeline] getContext
+[8mha:////4Nl573ty519nBircmVAaSz0Bdq1UWXAwJ0Xy1sTmSjbPAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiUSAkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g2/yR8JvgAAAA==[0m[Pipeline] }
+[8mha:////4M5hAHtCNd9j4e9dN0baXK2IqSXMpj+LqQisxOFSUanMAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIVEgRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g2gS0pbvgAAAA==[0m[Pipeline] // stage
+[8mha:////4HnwfdOas7KdnkQasc1U45MSjLWqSg/nbvYHYe5iuLbkAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYSDRIOEqGgtN7zAxMY4se6CfSGpeBFf4w8EIlGx1c5Kq3m+oMwJDpS8bBy2AXMdZBd7PzU5UGovkQbZ0FnWhJmik9oNmqw7zqiJHcwRBSwULB3WkXJAz7BSjbmbKhr01YnTtO0VFMHe4AFCTWY2ib8wJlhfe5sJf56/Ahg7BrFjKLabz7F8A1hnr8zBAAAA[0m[Pipeline] stage
+[8mha:////4IghSZHhCZ6OeR4BJTRu3V66Lmsv9BxnR2A+qhq6V+V/AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUxIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+ty4Up8IAAAA=[0m[Pipeline] { (Deploy to OpenShift)
+Stage "Deploy to OpenShift" skipped due to earlier failure(s)
+[8mha:////4HxTbapofwMxMFZ/P8Ys5FHYgjqppIdEQO6oLp91bL10AAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDud9+ahfettHKdL4AAAA=[0m[Pipeline] getContext
+[8mha:////4IcWCidcLGUVyoi3x+ZwDB1NgvRudcZpQBkxb3DEioWWAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIilBJR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMHmfoKzrT+3fKpbQQr4AAAA=[0m[Pipeline] }
+[8mha:////4FPlwrEaCnN7Kp0KH3yb23imaUSzlNa23c3446ro3Q7tAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7BgSW0ii+AAAA[0m[Pipeline] // stage
+[8mha:////4Duj6UGGn3dy+v67zAHXLTkYr8kAIBwxrgL8DOOTy8GBAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYRTICQkREVrueEFJjbGiXUX7AtJxYv4Gn8gEImKrXZWWs3zBWVOcKDkZeOwDZjrILvY+6nJgVJ7iTTIhs6yJswUndRu0GTdcUZN7GCOKGChYOmwjpQDeoaVaszdVNGgr06cpm2voAj2Bg8QajKzSfyFMcH62ttM+PP8FcDYMYgdQ7HZfo7lG+v2YpzBAAAA[0m[Pipeline] stage
+[8mha:////4LB2esVPEILo+M018b6pPNny8kn+huQSBFWYtO5pdn82AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD02yRsvCAAAA[0m[Pipeline] { (Declarative: Post Actions)
+[8mha:////4GgcwFeYMU5lXN5BZYPWkYSQJMp3pwenKe5COusEhqYIAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIEGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAF9GxrMvgAAAA==[0m[Pipeline] echo
+❌ Deployment failed!
+[8mha:////4Bv90EXUSd3dWC9zYTjHeKCwQRyZX3NaRbPhpZNr/9AnAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSICEkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpTb3af24Q2yB4JLvgAAAA==[0m[Pipeline] sh
++ curl -s -X POST https://api.telegram.org/bot7964045222:AAElE5m35X1rUfU-2lO0ZpLzwuy_esmMsvY/sendMessage -d chat_id=1868802578 -d text=❌ [Jenkins] Deploy *fp-frontend* gagal! -d parse_mode=Markdown
+{"ok":true,"result":{"message_id":71,"from":{"id":7964045222,"is_bot":true,"first_name":"zarsxy_","username":"zarsxy_bot"},"chat":{"id":1868802578,"first_name":"Yawww","username":"kautsarakasyah","type":"private"},"date":1753412300,"text":"\u274c Jenkins Deploy fp-frontend gagal!","entities":[{"offset":17,"length":11,"type":"bold"}]}}
+[8mha:////4H9hg9lPrTK/aSC1oEHafxOqciuRo8ksfQ0hTtgkynVgAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSICEhRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g3vIC99vgAAAA==[0m[Pipeline] }
+[8mha:////4CwdxQboEsICH+cO4fyTllzPgVgxwLoGGeOGLGBLKx5XAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AETHo4GvgAAAA==[0m[Pipeline] // stage
+[8mha:////4MUDfOGAorF0B5U0L6t1J6U1/xQXPo6ThSwhheWrziYrAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIREgUSoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN9tBdn+A63fXra9AAAA[0m[Pipeline] }
+[8mha:////4Bf++mCGV0PiLzBYvzX578RAytxlPn/D2Rxz4V1h3ehYAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREBIFoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN9tBdn+A+y4QWG9AAAA[0m[Pipeline] // withEnv
+[8mha:////4Nn8zStbh2aIlIV7zylMty4JZgzIW+Gjj9Rgri03y1SvAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpQDSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcVZPsPyqEmK70AAAA=[0m[Pipeline] }
+[8mha:////4P1LYdSZDf0wtabdvDXPN8Z97JlvwxmaBT9QjHfHBWI/AAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiI0WDlWthkaTxAhxkBmF5NFqDyRV/MOMjJj5a/+e817vbFOEUeOTrWWOk+p9qoPg5ufGjl218CjavmiaqbEwarKjhU39rRgxWKxLMux0thYqgMnT06w1a15mCIYcsVZ4uwOGrlv7ngi03NZTJQvTBG729Akpl/nbwBT3wvyshRk+w9gLA8AvQAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4FTKxIbtwpjR7aeGl4HUFMWLysyLJdjvlTlWhNNiJVkhAAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiI0WDlWthkaTxAhxkBmF5NFqDyRV/MOMjJj5a/+e817vbFOEUeOTrWWOk+p9qoPg5ufGjl218CjavmiaqbEwarKjhU39rRgxWKxLMux0thYqgMnT06w1a15mCIYcsVZ4uwOGrlv7ngi03NZTJQvTBG729Akpl/nbwBT3wvyci/Iyg9GNWhKvQAAAA==[0m[Pipeline] }
+[8mha:////4IbzoNdNB9BXbi44papFl+RV6WfZcLglqy3gvXCNOtoKAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpQDSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcXZNsPNdqsk70AAAA=[0m[Pipeline] // node
+[8mha:////4FD5FNisi6YLyPlkuGscbwV6jLv42q4hn2DifJEkGya0AAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREBIFoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN/tBdn2AxPDy9m9AAAA[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE
