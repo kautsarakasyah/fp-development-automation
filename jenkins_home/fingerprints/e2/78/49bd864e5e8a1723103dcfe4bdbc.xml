@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2025-07-25 07:06:13.309 UTC</timestamp>
+  <md5sum>e27849bd864e5e8a1723103dcfe4bdbc</md5sum>
+  <fileName>Credential id=frontend-url name=frontend-url</fileName>
+  <usages>
+    <entry>
+      <string>fp-frontend-deploy</string>
+      <ranges>16</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

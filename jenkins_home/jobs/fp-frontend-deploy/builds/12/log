@@ -1,0 +1,671 @@
+Started by GitHub push by kautsarakasyah
+[8mha:////4GBwVx9rc8PxRYgZUy5ZU3X/kqn5F6QLiCe3fN7fmDc/AAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4F8MgJ5kVhnTIZqdfGC62BnqQccdWjKtr/watCmfVeyfAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4KLPV+KCCXH4LyT8yYSpI/z1CFbCdWgntCeoNg+4DLO4AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZR/eT83ILSktQifY2k0sycEt3MPE19AHHxbH3KAAAA[0mJenkins in /var/jenkins_home/workspace/fp-frontend-deploy
+[8mha:////4K96hq20rhQAPPaJBSVu+rK8JSeZf7H3lhJkKhB1KlxSAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4IA5wwC7G5+Zlqkl1XQf1Dz3enZyYKWl7SwNiObCBLWAAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] withCredentials
+Masking supported pattern matches of $DOCKERHUB_CREDENTIALS or $DOCKERHUB_CREDENTIALS_PSW
+[8mha:////4OQyK/1Ldp8wGtleIboi6l4fj+QdWPdDm/uL0Cky3R+ZAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] {
+[8mha:////4EtWY1pmR77U2NiHhg+5ywKh6M2wZyKbPuUR0eACQrL5AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] withEnv
+[8mha:////4O4U8PhuDxs/jT2xBn1N4fqtYVAwfkppd1CuRZNFcuBFAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] {
+[8mha:////4OAju4fiVDJ7uwH2TIKLmtXPvy0AmUXiuXFa7VZMsK8TAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BSEm1igLJwhJCGmj/9skpZ04EVfjDgQqMWHJkm3Jes8X1CnCkaLjrcXOY9Ke92F0JfGJYncNNPGWLlwTJgqWSztJMva0VEnZwiJWwUrA2qIOlDy6DBvRqrtqgkLXnHMs20FA5c0AD2CikLOK+VvmCNvbaBLhj/MXAHOfge2K959f/QbB16AVwAAAAA==[0m[Pipeline] stage
+[8mha:////4PT1zt/7C7vZWRxrba2F6UmiL/Q+8RqxphfF6inhZsu+AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDJUJUtJYbXmBiY5xYd8G+kFS8iK/xBwKRqNhqZ6XVPF9Q5gQHSl42DtuAuQ6yi72fmhwotZdIg2zoLGvCTNFJ7QZN1h1n1MQO5ogCFgqWDutIOaBnWKnG3E0VDfrqxGna9gqKYG/wAKEmM5vEXxgTrK+9zYQ/z18BjB2D2DEU283nWL4Bsam+msEAAAA=[0m[Pipeline] { (Checkout)
+[8mha:////4O5iwIaq+l0rGmGN71ZzFIqfRudGKlH/6DIjqikho/zwAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCakRFa6XhBSYxxo5159gOTsWL+Bp/IBCJii1WO9vM8wXrGODIQaNV1BuKrUHvRj0vzBz6q+OMli/YMkV2ChuVG+7UacGGk4IlRQkrARtFreNoSCfYCivvsnKSdHVOYf4OAkrTDfCAQszmJEP6whRgdxu7yPTz/BXA5BOU9f5TtX8D0loxuL4AAAA=[0m[Pipeline] git
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/fp-frontend-deploy/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/kautsarakasyah/fp-development-automation.git # timeout=10
+Fetching upstream changes from https://github.com/kautsarakasyah/fp-development-automation.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.5'
+ > git fetch --tags --force --progress -- https://github.com/kautsarakasyah/fp-development-automation.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 276fc235b1e7be29367d311d47bb857616e391d9 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 276fc235b1e7be29367d311d47bb857616e391d9 # timeout=10
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D main # timeout=10
+ > git checkout -b main 276fc235b1e7be29367d311d47bb857616e391d9 # timeout=10
+Commit message: "Edited COPY --from=builder /app/next.config.ts ./"
+ > git rev-list --no-walk 0780070192ec0b96048a305770827e0e823b51ae # timeout=10
+[8mha:////4OXaFBHNJ0NajTFtNp7Sqj7nkscMTdopbenIsD4Kvb6CAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICtIgqreWGF5jYGCfWnbEdkooX8TX+QCASFVusdraZ5wuWKcKRo8XWUOcoNQ6D7+20cODYXTwP2PIZG6bE3qA0g2Rt6hklZwNzihIWAlaGGs/Jkc2wFq26q8orstUpx+k7CCidvsEDCjGZs4r5C2OEzbXXienn+SuAMYQM5W7/qe0bsgYiW74AAAA=[0m[Pipeline] }
+[8mha:////4M9J8t1Av3+gHKYzUfn4YOoBY0ezTctN4qIUL86H1mc3AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRokKIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsP6C1U670AAAA=[0m[Pipeline] // stage
+[8mha:////4CzSfp6OR+EfoORd2m3/Bqgq80OFbhS3suq/dvmDsxh4AAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjJAokREVrueEFJjbGiXUX7AtJxYv4Gn8gEImKrXZWWs3zBWVOcKDkZeOwDZjrILvY+6nJgVJ7iTTIhs6yJswUndRu0GTdcUZN7GCOKGChYOmwjpQDeoaVaszdVNGgr06cpm2voAj2Bg8QajKzSfyFMcH62ttM+PP8FcDYMYgdQ7HZfo7lG2c0ocDBAAAA[0m[Pipeline] stage
+[8mha:////4DP362ncRX1vUnrtglZlIusTLTOPU+FH4GnkzL7lA3QKAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] { (Debug Workspace)
+[8mha:////4JX9AqWEFbsl0/+VmAtHyTVEB0BXb9FTpk+MDpfAtaaqAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCmgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN7LjSKW+AAAA[0m[Pipeline] echo
+🔍 Menampilkan struktur folder workspace:
+[8mha:////4JO7yJux/TdNCR/0Hb9C1rA3UzWTVkAzjPk+U2k71jcXAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCkSBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAHz0lO8vgAAAA==[0m[Pipeline] sh
++ ls -al
+total 8
+drwxr-xr-x 1 root root 4096 Jul 25 03:48 .
+drwxr-xr-x 1 root root 4096 Jul 25 03:46 ..
+drwxr-xr-x 1 root root 4096 Jul 25 04:19 .git
+drwxr-xr-x 1 root root 4096 Jul 25 03:47 .vscode
+-rw-r--r-- 1 root root 5408 Jul 25 03:47 POSTMAN_TUTORIAL.md
+drwxr-xr-x 1 root root 4096 Jul 25 03:47 ci
+drwxr-xr-x 1 root root 4096 Jul 25 03:47 custom-postgres
+drwxr-xr-x 1 root root 4096 Jul 25 03:47 database
+drwxr-xr-x 1 root root 4096 Jul 25 04:19 fp-frondend-fix
+drwxr-xr-x 1 root root 4096 Jul 25 04:16 fp-frondend-fix@tmp
+drwxr-xr-x 1 root root 4096 Jul 25 03:47 gopay-service
+drwxr-xr-x 1 root root 4096 Jul 25 04:19 jenkins_home
+drwxr-xr-x 1 root root 4096 Jul 25 03:48 secret
+drwxr-xr-x 1 root root 4096 Jul 25 03:48 shopeepay-golang
+drwxr-xr-x 1 root root 4096 Jul 25 03:48 simulasi-automation
+[8mha:////4A2Z/zEHSIh2uPOCH3Ui4EVNXYxzzT6+WqEEJSPF1dWyAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCiQkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpTb3af24Q08zss7vgAAAA==[0m[Pipeline] echo
+🔍 Menampilkan isi folder fp-frondend-fix:
+[8mha:////4Jqx/tpjyBn+fStAZnWL6K+tuxalZlzkNO6F0jvAF1EKAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCgqEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAF9/9AivgAAAA==[0m[Pipeline] sh
++ ls -al fp-frondend-fix
+total 424
+drwxr-xr-x 1 root root   4096 Jul 25 04:19 .
+drwxr-xr-x 1 root root   4096 Jul 25 03:48 ..
+-rw-r--r-- 1 root root    480 Jul 25 03:47 .gitignore
+drwxr-xr-x 1 root root   4096 Jul 25 03:47 .idea
+drwxr-xr-x 1 root root   4096 Jul 25 03:47 .vscode
+-rw-r--r-- 1 root root    976 Jul 25 04:19 Dockerfile
+-rw-r--r-- 1 root root   5416 Jul 25 03:47 Jenkinsfile
+-rw-r--r-- 1 root root   1417 Jul 25 03:47 README.md
+-rw-r--r-- 1 root root    282 Jul 25 03:47 apphosting.yaml
+-rw-r--r-- 1 root root    448 Jul 25 03:47 components.json
+-rw-r--r-- 1 root root    365 Jul 25 03:47 docker-compose.yml
+-rw-r--r-- 1 root root    393 Jul 25 03:47 eslint.config.mjs
+-rw-r--r-- 1 root root    240 Jul 25 03:47 next.config.ts
+drwxr-xr-x 1 root root   4096 Jul 25 03:47 openshift
+-rw-r--r-- 1 root root 404321 Jul 25 03:47 package-lock.json
+-rw-r--r-- 1 root root   2548 Jul 25 03:47 package.json
+-rw-r--r-- 1 root root      0 Jul 25 03:47 pglite-debug.log
+-rw-r--r-- 1 root root    157 Jul 25 03:47 postcss.config.mjs
+drwxr-xr-x 1 root root   4096 Jul 25 03:47 public
+drwxr-xr-x 1 root root   4096 Jul 25 03:47 src
+-rw-r--r-- 1 root root   2939 Jul 25 03:47 tailwind.config.ts
+-rw-r--r-- 1 root root    602 Jul 25 03:47 tsconfig.json
+[8mha:////4DlL1s9MkJojCEzdaYTSqxN/rmfRXMF4bZTxgoYHjdobAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICSFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AGrSWhXvgAAAA==[0m[Pipeline] }
+[8mha:////4JQaBFFYcITh6SmKlqovQt7JGlF6Mp1VIN+v/4f8IrMoAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiIDpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOW+zlUfPpiqM+u+AAAA[0m[Pipeline] // stage
+[8mha:////4LEmabgjKV1iOJ+3qSFe0GwvtghBU4gS8W6L4D6EXdF+AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BKWgpeYQjpUJCVLSWG15gYmOcWHfBvpBUvIiv8QcMkajYamel1TxfUKUIB4pOdBZ7j6n1Ygijy01MFPtLoEl0dBYtYaJghbKTImOPCypiC0uKElYS1hbbQMmjY9jITt91HTS6+sQxb3sJpTc3eEAhs5l15C/MEbbX0STCn+evAOaBodgxlE3zOVZv580QJ8EAAAA=[0m[Pipeline] stage
+[8mha:////4A+ZhaX8Q/OXmPWu0Z3f0frOdNijrNsDeHCL8InGu/4eAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUKiNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPpnFij8IAAAA=[0m[Pipeline] { (Build & Push Frontend Docker Image)
+[8mha:////4DeYnftwM01TY5XV+lAkmFDXDRIqRZsQ4qjSjC2zcjiQAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAd6e6VPCAAAA[0m[Pipeline] dir
+Running in /var/jenkins_home/workspace/fp-frontend-deploy/fp-frondend-fix
+[8mha:////4KXKdkmhUesb/8D9ZSYO+pWVIt+wHK/9o72r9RM4FuMRAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQjAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/hYjrHCAAAA[0m[Pipeline] {
+[8mha:////4CxJyWOd1Bdkz62Ki4aaaa0juBfuk/WX47Q10vkWBzVdAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUGDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEIWoEpvgAAAA==[0m[Pipeline] echo
+📦 Membuat Docker image dengan JWT dan APP_URL
+[8mha:////4BUYPAkeEt80rWrxQ1o/YXs81ziRS2tIQNgPAjctDrqQAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiISEKRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpTb3af24Q1Ja5owvgAAAA==[0m[Pipeline] sh
++ docker build --build-arg JWT_SECRET=your-super-secret-jwt-key --build-arg NEXT_PUBLIC_APP_URL=http://fp-frontend-final-app-deployment.apps.ocp-one-gate-payment.skynux.fun -t kautsarakasyah/fp-frontend:latest .
+#1 [internal] load build definition from Dockerfile
+#1 sha256:fdde041cd8730db4e7ddc91a1d30b4ead59c44e1200113da2b8871f51adcb128
+#1 transferring dockerfile: 1.01kB 0.0s done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/library/node:20-alpine
+#2 sha256:ccecbba0a2e5c072602481fed7ccd4ede19058d4d7721294b010c0440ce9c682
+#2 DONE 0.9s
+
+#3 [internal] load .dockerignore
+#3 sha256:26c81ad40089b9a19909c0a5586e5001221fa7578336a0f07d7cb28a01a404cf
+#3 transferring context: 2B 0.0s done
+#3 DONE 0.1s
+
+#13 [internal] load build context
+#13 sha256:dcd357f1f3b26ab99e0f75175529258aa7285465a74b7af947e21ecdc3d60455
+#13 DONE 0.0s
+
+#17 [builder 1/8] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+#17 sha256:5c67827e52c3754aadb4edcba90a18f65dfbf9c63ba84e9289d4def8a6b1073e
+#17 resolve docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799 0.0s done
+#17 DONE 0.1s
+
+#14 [builder 2/8] WORKDIR /app
+#14 sha256:70ca4e5e75876fa53af5a61d6d42c24e0323ebfd5967bca3c8eddee141f505d2
+#14 CACHED
+
+#13 [internal] load build context
+#13 sha256:dcd357f1f3b26ab99e0f75175529258aa7285465a74b7af947e21ecdc3d60455
+#13 transferring context: 6.04kB 0.7s done
+#13 DONE 0.7s
+
+#12 [builder 3/8] COPY package*.json ./
+#12 sha256:32e39cd23659ce7838f5f6d8da5fb15f88d86c36de20190452b4ada8b7c27520
+#12 CACHED
+
+#11 [builder 4/8] COPY tsconfig.json ./
+#11 sha256:eadaa9ed539f9591754dc6c9275dd4609fabd720241235b5bd4652a69953c610
+#11 CACHED
+
+#10 [builder 5/8] COPY next.config.ts ./
+#10 sha256:2a4b195d939e5a012efe4547dd37abafea9d167d53dfab9b703746492a9cd01b
+#10 CACHED
+
+#18 [builder 6/8] COPY . .
+#18 sha256:6588db52ce1e5d5b06badb5b60afaf8e5599aa7a5c2389f38c48885990fbb9cc
+#18 DONE 0.2s
+
+#8 [builder 7/8] RUN npm install
+#8 sha256:dfb4886cbfebd1a3dc17229f1a5b4e4bba7ca60671e50e6cfba1210098fc2634
+#8 4.562 npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+#8 6.703 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+#8 9.352 npm warn deprecated @types/handlebars@4.1.0: This is a stub types definition. handlebars provides its own type definitions, so you do not need this installed.
+#8 16.62 npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+#8 61.23 
+#8 61.23 > nextn@0.1.0 postinstall
+#8 61.23 > patch-package
+#8 61.23 
+#8 61.42 patch-package 8.0.0
+#8 61.42 Applying patches...
+#8 61.42 No patch files found
+#8 61.43 
+#8 61.43 added 773 packages, and audited 774 packages in 1m
+#8 61.43 
+#8 61.43 103 packages are looking for funding
+#8 61.43   run `npm fund` for details
+#8 61.44 
+#8 61.44 2 vulnerabilities (1 low, 1 critical)
+#8 61.44 
+#8 61.44 To address all issues, run:
+#8 61.44   npm audit fix
+#8 61.44 
+#8 61.44 Run `npm audit` for details.
+#8 61.44 npm notice
+#8 61.44 npm notice New major version of npm available! 10.8.2 -> 11.5.1
+#8 61.44 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.5.1
+#8 61.44 npm notice To update run: npm install -g npm@11.5.1
+#8 61.44 npm notice
+#8 DONE 62.2s
+
+#7 [builder 8/8] RUN npm run build
+#7 sha256:964acb11f3b25b2c424edcccf1f8b381a6df153f8ff956d0d5fc72a95d9af45f
+#7 0.708 
+#7 0.708 > nextn@0.1.0 build
+#7 0.708 > next build
+#7 0.708 
+#7 1.356 Attention: Next.js now collects completely anonymous telemetry regarding usage.
+#7 1.356 This information is used to shape Next.js' roadmap and prioritize features.
+#7 1.356 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+#7 1.356 https://nextjs.org/telemetry
+#7 1.356 
+#7 1.462    ▲ Next.js 15.3.3
+#7 1.462 
+#7 1.479    Creating an optimized production build ...
+#7 17.46  ✓ Compiled successfully in 11.0s
+#7 17.47    Skipping validation of types
+#7 17.47    Skipping linting
+#7 17.71    Collecting page data ...
+#7 19.70    Generating static pages (0/17) ...
+#7 20.64    Generating static pages (4/17) 
+#7 20.64    Generating static pages (8/17) 
+#7 20.79    Generating static pages (12/17) 
+#7 20.79  ✓ Generating static pages (17/17)
+#7 21.06    Finalizing page optimization ...
+#7 21.06    Collecting build traces ...
+#7 26.14 
+#7 26.15 Route (app)                                 Size  First Load JS
+#7 26.15 ┌ ○ /                                     2.4 kB         251 kB
+#7 26.15 ├ ○ /_not-found                            977 B         102 kB
+#7 26.15 ├ ƒ /api/login                             141 B         101 kB
+#7 26.15 ├ ƒ /api/register                          141 B         101 kB
+#7 26.15 ├ ƒ /api/transactions                      141 B         101 kB
+#7 26.15 ├ ○ /bnipayment                          5.49 kB         267 kB
+#7 26.15 ├ ○ /gopay/payment                       3.34 kB         265 kB
+#7 26.15 ├ ○ /history                             12.3 kB         274 kB
+#7 26.15 ├ ○ /login                               1.95 kB         294 kB
+#7 26.15 ├ ○ /processing                          2.85 kB         257 kB
+#7 26.15 ├ ○ /register                            2.22 kB         294 kB
+#7 26.15 ├ ○ /result                              5.34 kB         267 kB
+#7 26.15 ├ ○ /shopeepay/payment                   3.35 kB         265 kB
+#7 26.15 └ ○ /transaction                         8.32 kB         297 kB
+#7 26.15 + First Load JS shared by all             101 kB
+#7 26.15   ├ chunks/4bd1b696-4419cc93057fcf32.js  53.2 kB
+#7 26.15   ├ chunks/684-7002d2f60d48787d.js       45.9 kB
+#7 26.15   └ other shared chunks (total)          1.92 kB
+#7 26.15 
+#7 26.15 
+#7 26.15 ○  (Static)   prerendered as static content
+#7 26.15 ƒ  (Dynamic)  server-rendered on demand
+#7 26.15 
+#7 DONE 26.4s
+
+#6 [runner 3/8] COPY --from=builder /app/public ./public
+#6 sha256:1dc08c7d094f464e26ebf75ccb5013b348fdf70d62b393c5ff5805a6c961d68d
+#6 DONE 0.1s
+
+#5 [runner 4/8] COPY --from=builder /app/.next ./.next
+#5 sha256:d955bf9857646a1d3ed194c3e50ab1f5418b14c6f8d748eb1fd241ec6c143e98
+#5 DONE 0.8s
+
+#4 [runner 5/8] COPY --from=builder /app/node_modules ./node_modules
+#4 sha256:16594f7f69d66c0ab8907af93994443353231adbcf2074fbc7cc301f361c3ee1
+#4 DONE 17.3s
+
+#15 [runner 6/8] COPY --from=builder /app/package*.json ./
+#15 sha256:578fa7e50b0b7f1efa7c8fad2a4d9813c5b43352175a59a57f867c25e8ed4b5f
+#15 DONE 0.7s
+
+#9 [runner 7/8] COPY --from=builder /app/next.config.ts ./
+#9 sha256:d6b46bc30d62f7b8571f1318bd880b3f5bece1d4c90f3ba4eea095f56156724e
+#9 DONE 0.1s
+
+#16 [runner 8/8] COPY --from=builder /app/tsconfig.json ./
+#16 sha256:23107a4c7e8b334c3019cd97002a2a191df1a431bd1ccecf81731420bc7fc9b4
+#16 DONE 0.1s
+
+#19 exporting to image
+#19 sha256:af63ae0df2c7c1478e6ba84a946f16f1117db3c89b69646c32ad174513b818d4
+#19 exporting layers
+#19 exporting layers 26.2s done
+#19 exporting manifest sha256:fbf968c668882e492133db6fa9f8eded17d080ab756aaf30cdde31f32f95d6e7 0.0s done
+#19 exporting config sha256:10296601249eb73ec5f56d549870acd44792e8951cd3180d406b83333037a945 0.0s done
+#19 naming to docker.io/kautsarakasyah/fp-frontend:latest
+#19 naming to docker.io/kautsarakasyah/fp-frontend:latest 0.0s done
+#19 unpacking to docker.io/kautsarakasyah/fp-frontend:latest
+#19 unpacking to docker.io/kautsarakasyah/fp-frontend:latest 11.9s done
+#19 DONE 38.2s
+[8mha:////4C6d17vqsNb+kqdqJPuq94PQY0ryPr+OViccZ4AMlhPNAAAAqB+LCAAAAAAAAP9tjUEKwjAURH8rXbh16SFSEARBXHUbsvEEsYkxbfi//qS2K0/k1byDrQVXzmKYGRje6w1FZDgRO9FYbD3G2osu9G5KYiBur4EG0dBF1ISRghXKDoqMrZaqKFlYlOWwkrC2WAeKHl2CjWz0Q5dBoyvPiaftKCH35g5PyORETprTt4wM21tvIuGP8xcAY5cg3+1nO8zP4gPmlJ7MwgAAAA==[0m[Pipeline] withCredentials
+Masking supported pattern matches of $PASS
+[8mha:////4MgnFV308h1UHZAyeWLin7Me1qdVX/SeA0VS3rC54ZpAAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgIhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0QKVszCAAAA[0m[Pipeline] {
+[8mha:////4ExJGpOjYrwADvD1JMTs0Tmr6n78xh/ZkuNuAZQThYIkAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AHN/bm5vgAAAA==[0m[Pipeline] sh
++ echo ****
++ docker login -u kautsarakasyah --password-stdin
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+[8mha:////4APEhOqKMXgIGDz1cFur8hhGHpZTHGDyZV1UvuPH0zGaAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AGMzKKgvgAAAA==[0m[Pipeline] sh
++ docker push kautsarakasyah/fp-frontend:latest
+The push refers to repository [docker.io/kautsarakasyah/fp-frontend]
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+0c491e9aacdf: Waiting
+067ff9a2b24c: Waiting
+f6a0b25c2069: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+067ff9a2b24c: Waiting
+9824c27679d3: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+067ff9a2b24c: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+067ff9a2b24c: Waiting
+54225bd60196: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+a9e48ad1219d: Waiting
+c45dad2dd3b4: Waiting
+9d7af26e07e5: Waiting
+8c59d92d6fc9: Waiting
+028acf2b384d: Waiting
+91674ce0a1a0: Waiting
+067ff9a2b24c: Waiting
+54225bd60196: Waiting
+028acf2b384d: Waiting
+9d7af26e07e5: Waiting
+0c491e9aacdf: Pushed
+a9e48ad1219d: Pushed
+028acf2b384d: Pushed
+c45dad2dd3b4: Pushed
+f6a0b25c2069: Pushed
+9d7af26e07e5: Pushed
+54225bd60196: Pushed
+9824c27679d3: Pushed
+067ff9a2b24c: Pushed
+8c59d92d6fc9: Pushed
+91674ce0a1a0: Pushed
+latest: digest: sha256:fbf968c668882e492133db6fa9f8eded17d080ab756aaf30cdde31f32f95d6e7 size: 2466
+[8mha:////4GnRsL360n/mLlyRDW1dpW3+7ZrpQKqBAAyJQ7sZNEftAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihQohqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AH8/EyevgAAAA==[0m[Pipeline] }
+[8mha:////4ICKspUjmxmywORsZWpiAXjs/APec4MNY6izarE3fMVIAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRSIOEqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkFZ17n2hw/PHxcivgAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4OwgrNW1k/bhgbckoYjwI/fqqoIOTenAI4ar+PuJ+0kNAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGIj8alQKlrLDScwiTFOrN1gOzgVJ+Jq3AGLSFRMMZo3zXu9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw/KU6NBvgAAAA==[0m[Pipeline] }
+[8mha:////4J5KkNpyoEdInE/QMEbi8W8UE+WLFv1kZFUStn1TJ8HHAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGIj8alQKlrLDScwiTFOrN1gOzgVJ+Jq3AGLSFRMMZo3zXu9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w/5sPj9vgAAAA==[0m[Pipeline] // dir
+[8mha:////4ONB4FlIzxhm1ECK02ClAWqE4va6Rif/E4fH499atYq7AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRiESDqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkFZH3Lt6w/0VwjlvgAAAA==[0m[Pipeline] }
+[8mha:////4BTdB0v903A2Q/YpohHSsS7Y1j9FVaX0y/N/m5p+RNb+AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihYICUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5P+Sq6w/HtFNZvgAAAA==[0m[Pipeline] // stage
+[8mha:////4IbeUGKWp8ArNeWduakCIKfAL3vkq+Veowl8oS9q/VKgAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYRT0ERCVLSWG15gEmOcWHfBvpBUvIiv8QcMkajYamel1TxfUKYIB4pOdhZ7j6nxcgijy01OFPtLoEl2dJYNYaJgpbaTptYeF9TEFpaIAlYK1habQMmjY9ioztxNFQy66sQxb3sFhW9v8AChsplN5C/MEbbXsU2EP89fAcwDg6gZil39OZZvNeX8IMEAAAA=[0m[Pipeline] stage
+[8mha:////4MvmeZbXDrdoVmqBK+gch2Isjw/Bg766phZhaVdvPKpSAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YAEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD59NhPHCAAAA[0m[Pipeline] { (Deploy to OpenShift)
+[8mha:////4LWxAeQTV33UR+h+qEkqy68vXNPupTM5RLGGQ/vaZ6jlAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCBA1CqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw/W61xwvgAAAA==[0m[Pipeline] echo
+🚀 Melakukan deploy ke OpenShift...
+[8mha:////4HGwt6/1gYwEEosHq6U0DM7a/2g3kLQ1mXrSagSeDNgwAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBA1CqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw+X2kdpvgAAAA==[0m[Pipeline] sh
++ oc rollout restart deployment fp-frontend -n final-app-deployment
+/var/jenkins_home/workspace/fp-frontend-deploy@tmp/durable-8d1e69b8/script.sh.copy: 1: oc: not found
+[8mha:////4CxnLM13kHoeTRU9eMCZeq28Vx53KXLlp9LG7Y6dUTZ3AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAQ1CqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDut7l2hw8z8/BCvgAAAA==[0m[Pipeline] }
+[8mha:////4DB8+TOp433OuG2E4gTDQXc4+OOrMyvj0umeOfSPVQsqAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJShAIJUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkG5r3PVhw8AEKv+vgAAAA==[0m[Pipeline] // stage
+[8mha:////4B7WIKew3y9kh0C8ZvOn6cRcqKE5WHq8EeejeE0qQPg+AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BKWgpeYTTpEBCVLSWG15gYmOcWHfBvpBUvIiv8QcMkajYamel1TxfUKUIB4pOdBZ7j6n1Ygijy01MFPtLoEl0dBYtYaJghbKTImOPCypiC0uKElYS1hbbQMmjY9jITt91HTS6+sQxb3sJpTc3eEAhs5l15C/MEbbX0STCn+evAOaBodgxlE3zOVZvwBuZksEAAAA=[0m[Pipeline] stage
+[8mha:////4EzA1T3YXzPxMdiqQOrCwTuEsOPsmQaKuCI0XEVSrvsRAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KRNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPIshjPcIAAAA=[0m[Pipeline] { (Declarative: Post Actions)
+[8mha:////4Gmgc1Zn5xNjQtM4CklId5xJ0Ho9qzQZHyeMdSYXdfr2AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSAA2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBj0vY+u+AAAA[0m[Pipeline] sh
++ curl -s -X POST https://api.telegram.org/bot7964045222:AAElE5m35X1rUfU-2lO0ZpLzwuy_esmMsvY/sendMessage -d chat_id=1868802578 -d text=❌ *Deploy frontend gagal!* -d parse_mode=Markdown
+{"ok":true,"result":{"message_id":77,"from":{"id":7964045222,"is_bot":true,"first_name":"zarsxy_","username":"zarsxy_bot"},"chat":{"id":1868802578,"first_name":"Yawww","username":"kautsarakasyah","type":"private"},"date":1753417676,"text":"\u274c Deploy frontend gagal!","entities":[{"offset":2,"length":22,"type":"bold"}]}}
+[8mha:////4NtIz7HYm95mXkdDT7GyrdhwRN5xErqxDqAZnRdZXYnWAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOLSgCgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N2y4ylS+AAAA[0m[Pipeline] }
+[8mha:////4FPiyNAhtRJyu5JKCC/RMk8MA3mwkG7LH7pwGQVAKNWbAAAApB+LCAAAAAAAAP9tjTESwiAURH/iWNhaegjSpHDGsbJlaDwBJogQ5n8CRFJ5Iq/mHUQzY+UWO/u2ec8XrGOAIwXNrMLBYOwM827SZbFMYbg6yszShXWEkZxiQmVBvTotKCgpWFLVsOKwUdg5igZ1gi238i4bJ1E35xTKd+BQm36EB1S8mJMM6QtzgN1t6iPhz/NXALP3Cep2/6n2DS86m9K+AAAA[0m[Pipeline] // stage
+[8mha:////4L1oMjdk895dEGR+WDFrYjNCAMV3SKT1QdmxSabn5VfYAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJpKECIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsXZLsPbJQuhr0AAAA=[0m[Pipeline] }
+[8mha:////4H3XLOc9khZhphSXhSWZOhcjrVoZG0MQTxXBjad16GMVAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKhQRSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcVZPsPKTjd0L0AAAA=[0m[Pipeline] // withEnv
+[8mha:////4LMyI7HQp+pWUesiO7uVLBbEcSnlL4CDMe8pzVn78IYBAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRBTSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcVZPsPDyG6mr0AAAA=[0m[Pipeline] }
+[8mha:////4JQKdho+FbnEsKIOBlyf3M8RVqWrrIeBWl/g4VIpZ/JGAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkJkzGybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FebkXZOUHZQoTRL0AAAA=[0m[Pipeline] // withCredentials
+[8mha:////4BjjYwiswPZXmU1vVRA9SuGW+9i8Lk4jw+ojg43e27itAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIUauVY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfI91tBtvsAQxN0Dr0AAAA=[0m[Pipeline] }
+[8mha:////4LFN4YfjONOud+A0QUSYlp8TWXNlb5MJF64Vh+MJeyDIAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIUauVY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfI9ztBtv0A8FowIr0AAAA=[0m[Pipeline] // node
+[8mha:////4CRUVxc9BFqsFK6xXWMpin5NVE8udie64FqAEy2I7mOBAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkJkzGybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FeVkKsv0H1kNXaL0AAAA=[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 127
+Finished: FAILURE

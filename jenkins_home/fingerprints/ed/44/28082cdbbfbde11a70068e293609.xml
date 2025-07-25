@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2025-07-25 07:06:13.209 UTC</timestamp>
+  <md5sum>ed4428082cdbbfbde11a70068e293609</md5sum>
+  <fileName>Credential id=jwt-secret name=jwt-secret</fileName>
+  <usages>
+    <entry>
+      <string>fp-frontend-deploy</string>
+      <ranges>16</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

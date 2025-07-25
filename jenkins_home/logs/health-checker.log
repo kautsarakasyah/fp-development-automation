@@ -1,6 +1,6 @@
-Starting health checks at Fri Jul 25 04:19:01 UTC 2025
-Health check results at Fri Jul 25 04:19:01 UTC 2025:
- * disk-space: Result{isHealthy=true, duration=0, timestamp=2025-07-25T04:19:01.182Z}
- * plugins: Result{isHealthy=false, message=There are 1 failed plugins: pipeline-graph-view, duration=0, timestamp=2025-07-25T04:19:01.182Z}
- * temporary-space: Result{isHealthy=true, duration=0, timestamp=2025-07-25T04:19:01.182Z}
- * thread-deadlock: Result{isHealthy=true, duration=0, timestamp=2025-07-25T04:19:01.182Z}
+Starting health checks at Fri Jul 25 07:19:36 UTC 2025
+Health check results at Fri Jul 25 07:19:36 UTC 2025:
+ * disk-space: Result{isHealthy=true, duration=0, timestamp=2025-07-25T07:19:36.208Z}
+ * plugins: Result{isHealthy=false, message=There are 1 failed plugins: pipeline-graph-view, duration=0, timestamp=2025-07-25T07:19:36.209Z}
+ * temporary-space: Result{isHealthy=true, duration=0, timestamp=2025-07-25T07:19:36.209Z}
+ * thread-deadlock: Result{isHealthy=true, duration=1, timestamp=2025-07-25T07:19:36.211Z}

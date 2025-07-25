@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2025-07-25 07:06:13.479 UTC</timestamp>
+  <md5sum>d91bb0bdfe37d51db4f73a9158696c3f</md5sum>
+  <fileName>Credential id=openshift-server name=openshift-server</fileName>
+  <usages>
+    <entry>
+      <string>fp-frontend-deploy</string>
+      <ranges>16</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

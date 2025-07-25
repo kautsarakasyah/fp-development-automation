@@ -4,9 +4,7 @@
     <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2258.v4e96d2b_da_f9b_"/>
     <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2258.v4e96d2b_da_f9b_">
       <jobProperties/>
-      <triggers>
-        <string>com.cloudbees.jenkins.GitHubPushTrigger</string>
-      </triggers>
+      <triggers/>
       <parameters/>
       <options/>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
@@ -18,38 +16,32 @@
       <projectUrl>https://github.com/kautsarakasyah/fp-development-automation.git/</projectUrl>
       <displayName></displayName>
     </com.coravy.hudson.plugins.github.GithubProjectProperty>
-    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
-      <triggers>
-        <com.cloudbees.jenkins.GitHubPushTrigger plugin="github@1.44.0">
-          <spec></spec>
-        </com.cloudbees.jenkins.GitHubPushTrigger>
-      </triggers>
-    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
   </properties>
   <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@4169.vb_7e492a_1c7b_e">
     <script>pipeline {
   agent any
 
-  triggers {
-    githubPush()
-  }
-
   environment {
     DOCKERHUB_CREDENTIALS = credentials(&apos;dockerhub-creds&apos;)
-    TELEGRAM_BOT_TOKEN = &apos;7964045222:AAElE5m35X1rUfU-2lO0ZpLzwuy_esmMsvY&apos;
-    TELEGRAM_CHAT_ID = &apos;1868802578&apos;
+    TELEGRAM_BOT_TOKEN = credentials(&apos;TELEGRAM_BOT_TOKEN&apos;)
+    TELEGRAM_CHAT_ID = credentials(&apos;TELEGRAM_CHAT_ID&apos;)
+    JWT_SECRET = credentials(&apos;jwt-secret&apos;)
+    NEXT_PUBLIC_APP_URL = credentials(&apos;frontend-url&apos;)
+    OPENSHIFT_TOKEN = credentials(&apos;openshift-token&apos;)
+    OPENSHIFT_SERVER = credentials(&apos;openshift-server&apos;)
     JENKINS_URL = &apos;https://c8f3fe8b4c2d.ngrok-free.app&apos;
-
-    // Build-time secrets (jangan didefinisikan hardcoded di file Dockerfile)
-    JWT_SECRET = &apos;your-super-secret-jwt-key&apos;
-    NEXT_PUBLIC_APP_URL = &apos;http://fp-frontend-final-app-deployment.apps.ocp-one-gate-payment.skynux.fun&apos;
   }
 
   stages {
-
     stage(&apos;Checkout&apos;) {
       steps {
-        git branch: &apos;main&apos;, url: &apos;https://github.com/kautsarakasyah/fp-development-automation.git&apos;
+        checkout([$class: &apos;GitSCM&apos;,
+          branches: [[name: &apos;*/main&apos;]],
+          userRemoteConfigs: [[
+            url: &apos;https://github.com/kautsarakasyah/fp-development-automation.git&apos;,
+            credentialsId: &apos;github-creds&apos;
+          ]]
+        ])
       }
     }
 
@@ -66,7 +58,6 @@
       steps {
         dir(&apos;fp-frondend-fix&apos;) {
           echo &apos;📦 Membuat Docker image dengan JWT dan APP_URL&apos;
-
           sh &quot;&quot;&quot;
             docker build \
               --build-arg JWT_SECRET=$JWT_SECRET \
@@ -85,7 +76,10 @@
     stage(&apos;Deploy to OpenShift&apos;) {
       steps {
         echo &apos;🚀 Melakukan deploy ke OpenShift...&apos;
-        sh &apos;oc rollout restart deployment fp-frontend -n final-app-deployment&apos;
+        sh &quot;&quot;&quot;
+          oc login $OPENSHIFT_SERVER --token=$OPENSHIFT_TOKEN --insecure-skip-tls-verify=true
+          oc rollout restart deployment fp-frontend -n final-app-deployment
+        &quot;&quot;&quot;
       }
     }
   }
